@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combination</title>
+    <style>
+
+      /* Descendant Selector style*/
+      #descendantSelector p {
+        color: blue;
+      }
+
+       /* Child Selector style */
+      div > p {
+        color: red;
+      }
+
+      /* Adjacent Selector style */
+      h1 + p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Descendant Selector  -->
+    <h1>Descendant Selector</h1>
+    <div id="descendantSelector">
+      <p>This is a paragraph.</p>
+      <div>
+        <p>This is another paragraph.</p>
+      </div>
+    </div>
+
+    <!-- Child Selector -->
+    <h1>Child Selector</h1>
+    <div id="childSelector">
+      <p>This is a direct child paragraph.</p>
+      <span>
+        <p>This is a nested paragraph.</p>
+      </span>
+    </div>
+
+    <!-- Adjacent Sibling Selector  -->
+    <h1 id="adjacentSibling">Adjacent Sibling Selector</h1>
+    <p>This paragraph is adjacent to the heading.</p>
+    <p>This paragraph is not adjacent.</p>
+  </body>
+</html>
